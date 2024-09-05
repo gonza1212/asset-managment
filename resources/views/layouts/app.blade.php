@@ -15,13 +15,11 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         @laravelPWA
     </head>
-    <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
-            @include('layouts.navigation')
-            <!-- Page Content -->
-            <main>
-                {{ $slot }}
-            </main>
-        </div>
+    <body class="bg-gray-100 dark:bg-gray-900 font-sans antialiased flex">
+        @include('layouts.navigation', ['user' => \Auth::user()])
+        <!-- Page Content -->
+        <main class="w-screen md:ml-64 sm:ml-0 xs:ml-0">
+            {{ $slot }}
+        </main>
     </body>
 </html>
