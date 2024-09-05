@@ -17,8 +17,22 @@ class UserSeeder extends Seeder
     public function run(): void
     {
         DB::table('users')->insert([
-            'name' => 'juan1',
-            'email' => 'email@falso.com',
+            'name' => 'manager1',
+            'email' => 'manager@mail.com',
+            'password' => Hash::make('123456'),
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now(),
+        ]);
+        DB::table('users')->insert([
+            'name' => 'admin1',
+            'email' => 'admin@mail.com',
+            'password' => Hash::make('123456'),
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now(),
+        ]);
+        DB::table('users')->insert([
+            'name' => 'operator1',
+            'email' => 'operator@mail.com',
             'password' => Hash::make('123456'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
