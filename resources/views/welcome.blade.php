@@ -1,5 +1,5 @@
 <x-guest-layout>
-    <div x-data="{ slides: ['images/web/image1.jpg', 'images/web/image2.jpg', 'images/web/image3.jpg', 'images/web/image4.jpg', 'images/web/image5.jpg'], activeSlide: 0 }" x-init="setInterval(() => activeSlide = (activeSlide + 1) % slides.length, 5000)" class="h-screen w-screen">
+    <div x-data="{ slides: ['images/web/image1.jpg', 'images/web/image2.jpg', 'images/web/image3.jpg', 'images/web/image4.jpg', 'images/web/image5.jpg'], activeSlide: 0 }" x-init="setInterval(() => activeSlide = (activeSlide + 1) % slides.length, 10000)" class="h-screen w-screen">
         <template x-for="(slide, index) in slides" :key="index">
             <div
             x-show="activeSlide === index"

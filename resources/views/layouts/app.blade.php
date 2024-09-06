@@ -17,9 +17,20 @@
     </head>
     <body class="bg-gray-100 dark:bg-gray-900 font-sans antialiased flex">
         @include('layouts.navigation', ['user' => \Auth::user()])
-        <!-- Page Content -->
-        <main class="w-screen md:ml-64 sm:ml-0 xs:ml-0">
-            {{ $slot }}
-        </main>
+
+        <div class="flex flex-col w-screen">
+            <!-- Page Heading -->
+            @isset($header)
+                <header class="md:ml-64 bg-white dark:bg-gray-800 shadow">
+                    <div class="mx-auto py-3 px-4 sm:px-6 lg:px-8">
+                        {{ $header }}
+                    </div>
+                </header>
+            @endisset
+            <!-- Page Content -->
+            <main class="md:ml-64 sm:ml-0 xs:ml-0">
+                {{ $slot }}
+            </main>
+        </div>
     </body>
 </html>

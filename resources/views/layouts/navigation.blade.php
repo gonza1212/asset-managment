@@ -15,7 +15,7 @@
         </button>
 
         <!-- Sección superior -->
-        <div class="p-4 border-b border-gray-700 flex items-center" id="user_data" style="cursor: pointer">
+        <div class="p-4 border-b border-gray-700 flex items-center cursor-pointer" id="user_data" title="Ver y editar perfil de usuario">
             <img src="/images/system/empty-profile.png" alt="Foto de perfil del usuario" class="w-12 h-12 rounded-full mr-4 border border-2 border-gray-400" />
             <div>
                 <h2 class="text-xl font-semibold">
@@ -37,31 +37,55 @@
                 </li>
                 <li>
                     <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-300 dark:hover:bg-gray-700">
-                        <i class="fas fa-cog mr-3"></i>
-                        <span x-show="!collapsed">Configuración</span>
+                        <i class="fa-solid fa-briefcase mr-3"></i>
+                        <span x-show="!collapsed">Proyectos</span>
                     </a>
                 </li>
                 <li>
                     <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-300 dark:hover:bg-gray-700">
-                        <i class="fas fa-question-circle mr-3"></i>
-                        <span x-show="!collapsed">Ayuda</span>
+                        <i class="fa-solid fa-people-group mr-3"></i>
+                        <span x-show="!collapsed">Equipos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-300 dark:hover:bg-gray-700">
+                        <i class="fa-solid fa-clipboard-user mr-3"></i>
+                        <span x-show="!collapsed">Personal</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('assets.index') }}" class="flex items-center px-4 py-2 hover:bg-gray-300 dark:hover:bg-gray-700">
+                        <i class="fa-solid fa-screwdriver-wrench mr-3"></i>
+                        <span x-show="!collapsed">Activos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-300 dark:hover:bg-gray-700">
+                        <i class="fa-solid fa-paint-roller mr-3"></i>
+                        <span x-show="!collapsed">Mantenimiento</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-300 dark:hover:bg-gray-700">
+                        <i class="fa-solid fa-clipboard-list mr-3"></i>
+                        <span x-show="!collapsed">Parte diario</span>
                     </a>
                 </li>
             </ul>
         </nav>
 
         <div class="flex items-center justify-between p-5 border-t border-gray-700">
-            <a href="#" class="text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-white">
-                theme
+            <a href="#" class="text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-white" title="Alternar entre tema claro y oscuro">
+                <i class="fa-solid fa-circle-half-stroke"></i>
             </a>
 
-            <a href="#" class="text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-white">
-                config
+            <a href="#" class="text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-white" title="Configuración">
+                <i class="fa-solid fa-gear"></i>
             </a>
             <form action="{{ route('logout') }}" method="post">
                 @csrf
-                <button type="submit" class="text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-white">
-                    logout
+                <button type="submit" class="text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-white" title="Cerrar sesión">
+                    <i class="fa-solid fa-right-from-bracket"></i>
                 </button>
             </form>
             
