@@ -21,5 +21,6 @@ Route::middleware('auth')->group(function () {
  * ASSETS
  */
 Route::get('/assets', [AssetController::class, 'index'])->name('assets.index')->middleware('auth');
+Route::get('/assets/{id}', [AssetController::class, 'show'])->name('assets.show')->middleware('auth');
 
 require __DIR__.'/auth.php';

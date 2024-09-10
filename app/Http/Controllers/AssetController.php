@@ -8,12 +8,22 @@ use App\DataFakers\AssetFaker;
 class AssetController extends Controller
 {
     /**
-     * Devuelve la vista con los activos cargados
+     * Devuelve la vista con la lista de los activos cargados
      * DEMO
      */
     public function index() {
         return view('assets.index', [
             'assets' => AssetFaker::all(),
+        ]);
+    }
+
+    /**
+     * Devuelve la vista show con el activo indicado
+     * DEMO
+     */
+    public function show($id) {
+        return view('assets.show', [
+            'asset' => AssetFaker::find($id),
         ]);
     }
 }
