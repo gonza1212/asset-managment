@@ -39,9 +39,9 @@
     <!-- Barra de Herramientas -->
         <div class="flex items-center justify-between mb-4">
             <div class="flex space-x-4">
-                <button class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-500 dark:hover:bg-gray-400">Agregar</button>
-                <button class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-red-500 dark:bg-gray-700 dark:hover:bg-gray-700">Eliminar</button>
-                <button class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-gray-700 dark:hover:bg-gray-700">Asignar</button>
+                <x-light-button>Agregar</x-light-button>
+                <x-gray-button>Eliminar</x-gray-button>
+                <x-gray-button>Asignar</x-gray-button>
             </div>
             <div class="flex items-center space-x-2">
                 <div class="bg-gray-100 dark:bg-gray-500 dark:hover:bg-gray-400 rounded-md flex items-center justify-between">

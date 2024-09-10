@@ -27,5 +27,10 @@ Route::get('/assets/{id}', [AssetController::class, 'show'])->name('assets.show'
  * PROJECTS
  */
 Route::get('/projects', [ProjectController::class, 'index'])->name('projects.index')->middleware('auth');
+Route::get('/projects/{id}', [ProjectController::class, 'show'])->name('projects.show')->middleware('auth');
+/**
+ * MAINTENANCE
+ */
+Route::get('/maintenance', [MaintenanceController::class, 'index'])->name('maintenance.index')->middleware('auth');
 
 require __DIR__.'/auth.php';

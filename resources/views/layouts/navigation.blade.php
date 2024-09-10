@@ -60,7 +60,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-300 dark:hover:bg-gray-700">
+                    <a href="{{ route('maintenance.index') }}" class="flex items-center px-4 py-2 hover:bg-gray-300 dark:hover:bg-gray-700">
                         <i class="fa-solid fa-paint-roller mr-3"></i>
                         <span x-show="!collapsed">Mantenimiento</span>
                     </a>

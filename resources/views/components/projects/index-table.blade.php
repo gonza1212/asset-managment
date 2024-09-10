@@ -26,7 +26,7 @@
                     <input type="checkbox" class="w-4 h-4" />
                 </td>
                 <td class="py-3 px-2 border-r dark:bg-gray-800 dark:border-gray-700 dark:text-white">{{ $p['code'] }}</td>
-                <td class="py-3 px-2 border-r dark:bg-gray-800 dark:border-gray-700 dark:text-white hover:text-blue-400"><a href="{{ route('assets.show', $p['id']) }}">{{ $p['name'] }}</a></td>
+                <td class="py-3 px-2 border-r dark:bg-gray-800 dark:border-gray-700 dark:text-white hover:text-blue-400"><a href="{{ route('projects.show', $p['id']) }}">{{ $p['name'] }}</a></td>
                 <td class="py-3 px-2 border-r dark:bg-gray-800 dark:border-gray-700 dark:text-white">{{ $p['description'] }}</td>
                 <td class="py-3 px-2 border-r dark:bg-gray-800 dark:border-gray-700 dark:text-white">{{ $p['status'] }}</td>
                 <td class="py-3 px-2 border-r dark:bg-gray-800 dark:border-gray-700 dark:text-white">{{ $p['started_at'] }}</td>
