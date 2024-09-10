@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AssetController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ProjectController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -22,5 +23,9 @@ Route::middleware('auth')->group(function () {
  */
 Route::get('/assets', [AssetController::class, 'index'])->name('assets.index')->middleware('auth');
 Route::get('/assets/{id}', [AssetController::class, 'show'])->name('assets.show')->middleware('auth');
+/**
+ * PROJECTS
+ */
+Route::get('/projects', [ProjectController::class, 'index'])->name('projects.index')->middleware('auth');
 
 require __DIR__.'/auth.php';

@@ -36,7 +36,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-300 dark:hover:bg-gray-700">
+                    <a href="{{ route('projects.index') }}" class="flex items-center px-4 py-2 hover:bg-gray-300 dark:hover:bg-gray-700">
                         <i class="fa-solid fa-briefcase mr-3"></i>
                         <span x-show="!collapsed">Proyectos</span>
                     </a>
