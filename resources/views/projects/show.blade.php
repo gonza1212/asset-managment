@@ -14,57 +14,65 @@
         <div class="sm:px-6 lg:px-8">
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900 dark:text-gray-100">
+                    <!-- DETALLES -->
                     <p class="mb-5">Detalles</p>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Nombre -->
-        <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-6">
-            <p class="mb-2 dark:text-gray-400">Nombre</p>
-            <h3 class="text-xl dark:text-gray-100">{{ $project['name'] }}</h3>
-        </div>
-        
-        <!-- Descripción -->
-        <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-6">
-            <p class="mb-2 dark:text-gray-400">Descripción</p>
-            <h3 class="text-xl dark:text-gray-100">{{ $project['description'] }}</h3>
-        </div>
-        
-        <!-- ID -->
-        <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-6">
-            <p class="mb-2 dark:text-gray-400">ID</p>
-            <h3 class="text-xl dark:text-gray-100">{{ $project['id'] }}</h3>
-        </div>
-        
-        <!-- Prioridad -->
-        <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-6">
-            <p class="mb-2 dark:text-gray-400">Prioridad</p>
-            <h3 class="text-xl dark:text-gray-100">{{ $project['priority'] }}</h3>
-        </div>
-        
-        <!-- Estado -->
-        <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-6">
-            <p class="mb-2 dark:text-gray-400">Estado</p>
-            <h3 class="text-xl dark:text-gray-100">{{ $project['status'] }}</h3>
-        </div>
-        
-        <!-- Activos Asignados -->
-        <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-6">
-            <p class="mb-2 dark:text-gray-400">Activos Asignados</p>
-            <p>{{ $project['assets'] }}</p>
-        </div>
-        
-        <!-- Fecha de Inicio -->
-        <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-6">
-            <p class="mb-2 dark:text-gray-400">Fecha de Inicio</p>
-            <h3 class="text-xl dark:text-gray-100">{{ $project['started_at'] }}</h3>
-        </div>
-        
-        <!-- Fecha de Finalización -->
-        <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-6">
-            <p class="mb-2 dark:text-gray-400">Fecha de Finalización</p>
-            <h3 class="text-xl dark:text-gray-100">{{ $project['finished_at'] }}</h3>
-        </div>
-    </div>
+                        <!-- Nombre -->
+                        <x-projects.detail-card :attribute="'Nombre'" :data="$project['name']" />
+                        
+                        <!-- Descripción -->
+                        <x-projects.detail-card :attribute="'Descripción'"  :data="$project['description']" />
+                        
+                        <!-- ID -->
+                        <x-projects.detail-card :attribute="'ID'"  :data="$project['id']" />
+                        
+                        <!-- Prioridad -->
+                        <x-projects.detail-card :attribute="'Prioridad'"  :data="$project['priority']" />
+                        
+                        <!-- Estado -->
+                        <x-projects.detail-card :attribute="'Estado'"  :data="$project['status']" />
+                        
+                        <!-- Activos Asignados -->
+                        <x-projects.detail-card :attribute="'Activos Asignados'" :data="$project['assets']" />
+                        
+                        <!-- Fecha de Inicio -->
+                        <x-projects.detail-card :attribute="'Fecha de Inicio'" :data="$project['started_at']" />
+                        
+                        <!-- Fecha de Finalización -->
+                        <x-projects.detail-card :attribute="'Fecha de Finalización'" :data="$project['finished_at']" />
+                    </div>
+                    <x-gray-button class="mt-5 mb-3">Editar</x-gray-button>
+
+                    <!-- ASIGNACIÓN -->
+                    <p class="mb-5 mt-12">Asignación</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Responsable -->
+                        <x-projects.detail-card :attribute="'Responsable'" :data="$project['project_manager']" />
+                        
+                        <!-- Sub-Responsable -->
+                        <x-projects.detail-card :attribute="'Sub-Responsable'"  :data="$project['deputy_manager']" />
+                        
+                        <!-- Equipo -->
+                        <x-projects.detail-card :attribute="'Equipo'"  :data="$project['team']" />
+                        
+                        <!-- Ubicación -->
+                        <x-projects.detail-card :attribute="'Ubicación'"  :data="$project['location']" />
+                    </div>
+                    <x-gray-button class="mt-5 mb-3">Ir a Asignaciones</x-gray-button>
+                    <x-gray-button class="mt-5 mb-3 ms-5">Ver Historial</x-gray-button>
+
+                    <!-- AVANCE -->
+                    <p class="mb-5 mt-12">Avance</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Porcentaje de Avance -->
+                        <x-projects.detail-card :attribute="'Porcentaje de Avance'" :data="$project['progress_percentage']" />
+                        
+                        <!-- Fecha de último informe -->
+                        <x-projects.detail-card :attribute="'Fecha de último informe'"  :data="$project['last_report_at']" />
+                    </div>
+                    <x-gray-button class="mt-5 mb-3">Ver informe de progreso</x-gray-button>
                 </div>
+                <x-gray-button class="mt-5 mb-20 ms-6 px-12">Finalizar Proyecto</x-gray-button>
             </div>
         </div>
     </div>
