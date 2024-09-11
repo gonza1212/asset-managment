@@ -19,15 +19,19 @@
         <div class="flex items-center space-x-2 w-1/4">
             <label for="filtrar" class="text-gray-700 dark:text-gray-400">Filtrar:</label>
             <x-select :id="'filtrar'">
-                <option value="todos">Todos</option>
-                <option value="activos">Activos</option>
-                <option value="inactivos">Inactivos</option>
-                <option value="other">Otros estados</option>
+                <option value="Seleccionar estado">Seleccionar estado</option>
+                <option value="Disponible">Disponible</option>
+                <option value="En uso">En uso</option>
+                <option value="En mantenimiento">En mantenimiento</option>
+                <option value="En reparación">En reparación</option>
+                <option value="En almacenamiento">En almacenamiento</option>
+                <option value="Dado de baja / Retirado">Dado de baja / Retirado</option>
+                <option value="Asignado">Asignado</option>
             </x-select>
         </div>
         <!-- Búsqueda -->
         <div class="flex items-center space-x-2 w-1/2">
-            <div class="relative w-full">
+            <div class="relative w-full ps-2">
                 <input type="text" placeholder="Buscar..." class="border border-gray-300 dark:border-gray-600 dark:text-gray-300 dark:bg-gray-700 rounded-xl p-2 pl-10 focus:outline-none focus:ring-2 focus:ring-blue-500 w-full">
                 <!-- Icono de lupa -->
                 <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
