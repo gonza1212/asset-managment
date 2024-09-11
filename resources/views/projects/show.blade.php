@@ -1,15 +1,15 @@
 <x-app-layout>
-<x-slot name="header">
-    <div class="flex items-center justify-between">
-        <button onclick="history.back()" class="px-4 py-2 text-gray-500 hover:text-gray-300">
-            <i class="fa-solid fa-arrow-left fa-lg"></i>
-        </button>
-        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight flex-grow text-center">
-            ID: {{ $project['code'] }}
-        </h2>
-        <div class="w-24"></div> <!-- Espacio vacío para equilibrar el diseño -->
-    </div>
-</x-slot>
+    <x-slot name="header">
+        <div class="flex items-center justify-between">
+            <button onclick="history.back()" class="px-4 py-2 text-gray-500 hover:text-gray-300">
+                <i class="fa-solid fa-arrow-left fa-lg"></i>
+            </button>
+            <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight flex-grow text-center">
+                ID: {{ $project['code'] }}
+            </h2>
+            <div class="w-24"></div> <!-- Espacio vacío para equilibrar el diseño -->
+        </div>
+    </x-slot>
     <div class="py-4">
         <div class="sm:px-6 lg:px-8">
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
@@ -41,7 +41,7 @@
                         <!-- Fecha de Finalización -->
                         <x-projects.detail-card :attribute="'Fecha de Finalización'" :data="$project['finished_at']" />
                     </div>
-                    <x-gray-button class="mt-5 mb-3">Editar</x-gray-button>
+                    <x-gray-button class="mt-5 mb-3" id="openEditProjectModal">Editar</x-gray-button>
 
                     <!-- ASIGNACIÓN -->
                     <p class="mb-5 mt-12">Asignación</p>
@@ -76,4 +76,5 @@
             </div>
         </div>
     </div>
+    <x-projects.edit-modal :project="$project" />
 </x-app-layout>
