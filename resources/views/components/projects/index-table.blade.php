@@ -1,5 +1,5 @@
 <!-- Tabla -->
-<div class="overflow-x-auto">
+<div class="overflow-x-auto border border-gray-300 rounded-b-xl">
     <table class="w-full bg-white border border-gray-300 dark:bg-gray-800 dark:border-gray-700">
         <thead>
             <tr class="bg-gray-100 border-b dark:bg-gray-700 dark:border-gray-600">
@@ -14,7 +14,7 @@
                 <th class="py-3 px-2 text-left border-r dark:bg-gray-800 dark:border-gray-700 dark:text-white">Fecha de Finalización</th>
                 <th class="py-3 px-2 text-left border-r dark:bg-gray-800 dark:border-gray-700 dark:text-white">Responsable</th>
                 <th class="py-3 px-2 text-left border-r dark:bg-gray-800 dark:border-gray-700 dark:text-white">Activos Asignados</th>
-                <th class="py-3 px-2 text-left border-r dark:bg-gray-800 dark:border-gray-700 dark:text-white">Ubicaicón</th>
+                <th class="py-3 px-2 text-left border-r dark:bg-gray-800 dark:border-gray-700 dark:text-white">Ubicación</th>
                 <th class="py-3 px-2 text-left border-r dark:bg-gray-800 dark:border-gray-700 dark:text-white">Prioridad</th>
             </tr>
         </thead>

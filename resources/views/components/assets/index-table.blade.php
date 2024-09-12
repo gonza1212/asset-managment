@@ -1,5 +1,5 @@
 <!-- Tabla -->
-<div class="overflow-x-auto">
+<div class="overflow-x-auto border border-gray-300 rounded-b-xl">
     <table class="w-full bg-white border border-gray-300 dark:bg-gray-800 dark:border-gray-700">
         <thead>
             <tr class="bg-gray-100 border-b dark:bg-gray-700 dark:border-gray-600">

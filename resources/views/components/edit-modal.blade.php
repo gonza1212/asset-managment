@@ -1,6 +1,6 @@
 @props(['entity', 'modal_id'])
 
-<div id="{{ $modal_id }}" class="fixed inset-0 bg-gray-600 bg-opacity-50 hidden flex justify-center items-center">
+<div id="{{ $modal_id }}" class="fixed inset-0 bg-gray-600 bg-opacity-50 hidden flex justify-center items-center z-50">
     <div class="flex justify-center items center w-full">
         <div class="bg-white dark:bg-gray-800 rounded-lg p-8 w-1/2 fade-in modal-content z-50">
             {{ $slot }}
