@@ -26,4 +26,11 @@ class AssetController extends Controller
             'asset' => AssetFaker::find($id),
         ]);
     }
+
+    /**
+     * Devuelve la vista para cargar un activo nuevo
+     */
+    public function create() {
+        return view('assets.create');
+    }
 }

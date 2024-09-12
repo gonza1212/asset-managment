@@ -10,6 +10,7 @@
         <div class="flex items-center space-x-2 w-1/4">
             <label for="mostrar" class="text-gray-700 dark:text-gray-400">Mostrar:</label>
             <x-select :id="'mostrar'">
+                <option value="Seleccionar categoría">Seleccionar categoría</option>
                 <option value="Equipos">Equipos</option>
                 <option value="Herramientas">Herramientas</option>
                 <option value="Consumibles">Consumibles</option>
@@ -43,9 +44,9 @@
     <!-- Barra de Herramientas -->
         <div class="flex items-center justify-between mb-4">
             <div class="flex space-x-4">
-                <x-light-button>Agregar</x-light-button>
+                <x-light-button href="{{ route('assets.create') }}">Agregar</x-light-button>
                 <x-gray-button>Eliminar</x-gray-button>
-                <x-gray-button>Asignar</x-gray-button>
+                <x-gray-button id="openEditAssetModal">Asignar</x-gray-button>
             </div>
             <div class="flex items-center space-x-2">
                 <div class="bg-gray-100 dark:bg-gray-500 dark:hover:bg-gray-400 rounded-md flex items-center justify-between">
@@ -63,4 +64,39 @@
     <div class="mx-6 mb-[50px]">
         <x-assets.index-table :assets="$assets" />
     </div>
+
+    <x-edit-modal :modal_id="'assign_assets_modal'" :entity="'Asset'">
+    <div class="py-4">
+        <div class="sm:px-6 lg:px-8">
+            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+                <div class="p-6 text-gray-900 dark:text-gray-100">
+                    <!-- DETALLES -->
+                    <p class="mb-5">Asignar Activo/s</p>
+                    <div class="flex flex-col space-y-16">
+                        <!-- Equipo -->
+                        <div class="flex flex-col">
+                            <label for="team" class="mb-2">Equipo</label>
+                            <x-select :id="'team'">
+                                <option value="Seleccionar estado">Seleccione un equipo</option>
+                            </x-select>
+                        </div>
+
+                        <!-- Proyecto -->
+                        <div class="flex flex-col">
+                            <label for="project" class="mb-2">Proyecto</label>
+                            <x-select :id="'project'">
+                                <option value="Seleccionar estado">Seleccione un proyecto</option>
+                            </x-select>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="w-full text-center">
+                    <x-gray-button class="mt-5 mb-20 ms-6 px-12" id="closeEditAssetModal">Cancelar</x-gray-button>
+                    <x-gray-button class="mt-5 mb-20 ms-6 px-12">Continuar</x-gray-button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </x-edit-modal>
 </x-app-layout>
