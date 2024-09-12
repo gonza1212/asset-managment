@@ -1,6 +1,6 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight text-center">
+        <h2 class="font-semibold text-xl text-white dark:text-gray-200 leading-tight text-center">
             {{ __('Activos') }}
         </h2>
     </x-slot>
@@ -9,7 +9,7 @@
         <!-- Mostrar -->
         <div class="flex items-center space-x-2 w-1/4">
             <label for="mostrar" class="text-gray-700 dark:text-gray-400">Mostrar:</label>
-            <x-select :id="'mostrar'">
+            <x-select class="w-1/2" :id="'mostrar'">
                 <option value="Seleccionar categoría">Seleccionar categoría</option>
                 <option value="Equipos">Equipos</option>
                 <option value="Herramientas">Herramientas</option>
@@ -19,7 +19,7 @@
         <!-- Filtrar -->
         <div class="flex items-center space-x-2 w-1/4">
             <label for="filtrar" class="text-gray-700 dark:text-gray-400">Filtrar:</label>
-            <x-select :id="'filtrar'">
+            <x-select class="w-1/2" :id="'filtrar'">
                 <option value="Seleccionar estado">Seleccionar estado</option>
                 <option value="Disponible">Disponible</option>
                 <option value="En uso">En uso</option>
@@ -40,21 +40,21 @@
         </div>
     </div>
 
-    <div class="bg-gray-100 dark:bg-gray-800 p-4 mx-6 mt-6 mb-0 rounded-t-xl">
+    <div class="bg-gray-300 dark:bg-gray-800 p-4 mx-6 mt-6 mb-0 rounded-t-xl">
     <!-- Barra de Herramientas -->
-        <div class="flex items-center justify-between mb-4">
+        <div class="flex items-center justify-between mb-2">
             <div class="flex space-x-4">
-                <x-light-button href="{{ route('assets.create') }}">Agregar</x-light-button>
-                <x-gray-button>Eliminar</x-gray-button>
-                <x-gray-button id="openEditAssetModal">Asignar</x-gray-button>
+                <x-custom-dark-blue-button href="{{ route('assets.create') }}">Agregar</x-custom-dark-blue-button>
+                <x-custom-red-button>Eliminar</x-custom-red-button>
+                <x-custom-red-button id="openEditAssetModal">Asignar</x-custom-red-button>
             </div>
             <div class="flex items-center space-x-2">
                 <div class="bg-gray-100 dark:bg-gray-500 dark:hover:bg-gray-400 rounded-md flex items-center justify-between">
-                    <button class="text-gray-500 dark:text-white hover:text-gray-700 border-e border-gray-600 px-2 py-1">
+                    <button class="text-gray-500 dark:text-white hover:text-gray-700 border-e border-gray-300 px-2 py-1">
                         <i class="fa-solid fa-chevron-left px-2"></i>
                     </button>
                     <span class="text-gray-700 dark:text-white px-2 py-1">1 - 4</span>
-                    <button class="text-gray-500 dark:text-white hover:text-gray-700 border-s border-gray-600 px-2 py-1">
+                    <button class="text-gray-500 dark:text-white hover:text-gray-700 border-s border-gray-300 px-2 py-1">
                         <i class="fa-solid fa-chevron-right px-2"></i>
                     </button>
                 </div>

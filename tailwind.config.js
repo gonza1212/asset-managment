@@ -17,6 +17,15 @@ export default {
             screens: {
                 xs: {'max': '640px'},
             },
+            colors: {
+                'custom-blue': '#79ECF3',
+                'custom-dark-blue': '#4EB6BC',
+                'custom-light-blue': '#B2D0DA',
+                'custom-violet': '#ACCDFF',
+                'custom-green': '#79F3D6',
+                'custom-red': '#F37979',
+                'custom-light-red': '#DAB4B4',                                         
+            },
         },
     },
 

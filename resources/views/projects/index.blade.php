@@ -1,6 +1,6 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
+        <h2 class="font-semibold text-xl text-white dark:text-gray-200 leading-tight">
             {{ __('Proyectos') }}
         </h2>
     </x-slot>
@@ -41,20 +41,20 @@
         </div>
     </div>
 
-    <div class="bg-gray-100 dark:bg-gray-800 p-4 mx-6 mt-6 mb-0 rounded-t-xl">
+    <div class="bg-gray-300 dark:bg-gray-800 p-4 mx-6 mt-6 mb-0 rounded-t-xl">
     <!-- Barra de Herramientas -->
         <div class="flex items-center justify-between mb-4">
             <div class="flex space-x-4">
-                <x-light-button>Agregar</x-light-button>
-                <x-gray-button>Finalizar</x-gray-button>
+                <x-custom-dark-blue-button>Agregar</x-custom-dark-blue-button>
+                <x-custom-red-button>Finalizar</x-custom-red-button>
             </div>
             <div class="flex items-center space-x-2">
                 <div class="bg-gray-100 dark:bg-gray-500 dark:hover:bg-gray-400 rounded-md flex items-center justify-between">
-                    <button class="text-gray-500 dark:text-white hover:text-gray-700 border-e border-gray-600 px-2 py-1">
+                    <button class="text-gray-500 dark:text-white hover:text-gray-700 border-e border-gray-300 px-2 py-1">
                         <i class="fa-solid fa-chevron-left px-2"></i>
                     </button>
                     <span class="text-gray-700 dark:text-white px-2 py-1">1 - 4</span>
-                    <button class="text-gray-500 dark:text-white hover:text-gray-700 border-s border-gray-600 px-2 py-1">
+                    <button class="text-gray-500 dark:text-white hover:text-gray-700 border-s border-gray-300 px-2 py-1">
                         <i class="fa-solid fa-chevron-right px-2"></i>
                     </button>
                 </div>

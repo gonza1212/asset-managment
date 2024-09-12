@@ -15,14 +15,14 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         @laravelPWA
     </head>
-    <body class="bg-gray-100 dark:bg-gray-900 font-sans antialiased flex">
+    <body class="bg-white dark:bg-gray-900 font-sans antialiased flex">
         @include('layouts.navigation', ['user' => \Auth::user()])
 
         <div class="flex flex-col w-screen">
             <!-- Page Heading -->
             @isset($header)
-                <header class="md:ml-64 bg-white dark:bg-gray-800 shadow">
-                    <div class="mx-auto py-3 px-4 sm:px-6 lg:px-8">
+                <header class="bg-custom-dark-blue dark:bg-gray-800 shadow">
+                    <div class="mx-auto py-3 px-4 sm:px-6 lg:px-8 text-center flex justify-center flex-wrap flex-col content-stretch h-[60px]">
                         {{ $header }}
                     </div>
                 </header>
