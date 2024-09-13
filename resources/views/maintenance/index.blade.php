@@ -5,7 +5,7 @@
         </h2>
     </x-slot>
     <!-- En mantenimiento -->
-    <div class="bg-white border-2 border-b-0 dark:border-gray-700 dark:bg-gray-800 p-4 mx-6 mt-6 mb-0 rounded-t-xl">
+    <div class="bg-gray-300 border-2 border-b-0 border-gray-300 dark:border-gray-700 dark:bg-gray-700 dark:border-b-2 border-gray-700 p-4 mx-6 mt-6 mb-0 rounded-t-xl">
         <!-- Barra de Herramientas -->
         <div class="flex items-center justify-between">
             <h3 class="dark:text-white text-lg font-bold">En mantenimiento</h3>
@@ -35,13 +35,13 @@
         </div>
     </div>
 
-    <div class="mx-6 mb-6 dark:bg-gray-500 dark:rounded-xl dark:p-4" id="calendar_container">
+    <div class="mx-6 mb-6  rounded-xl p-3 border-2 border-gray-300 dark:bg-gray-800 dark:text-white dark:rounded-xl dark:p-4" id="calendar_container">
         <div id='calendar' style="max-height:480px;"></div>
     </div>
 
     <div class="hidden" id="list_container">
         <!-- Pendientes -->
-        <div class="bg-white border-2 border-b-0 dark:border-gray-700 dark:bg-gray-800 p-4 mx-6 mt-6 mb-0 rounded-t-xl">
+        <div class="bg-white border-2 border-b-0 dark:border-gray-600 dark:bg-gray-600 p-4 mx-6 mt-6 mb-0 rounded-t-xl">
             <!-- Barra de Herramientas -->
             <div class="flex items-center justify-between">
                 <h3 class="dark:text-white text-lg font-bold">Pendientes</h3>
@@ -52,7 +52,7 @@
         </div>
 
         <!-- Próximos -->
-        <div class="bg-gray-300 border-2 border-b-0 dark:border-gray-700 dark:bg-gray-800 p-4 mx-6 mt-6 mb-0 rounded-t-xl">
+        <div class="bg-gray-300 border-2 border-b-0 dark:border-gray-600 dark:bg-gray-600 p-4 mx-6 mt-6 mb-0 rounded-t-xl">
             <!-- Barra de Herramientas -->
             <div class="flex items-center justify-between">
                 <div class="flex space-x-4">
@@ -60,11 +60,11 @@
                 </div>
                 <div class="flex items-center space-x-2">
                     <div class="bg-white dark:bg-gray-500 dark:hover:bg-gray-400 rounded-md flex items-center justify-between">
-                        <button class="text-gray-500 dark:text-white hover:text-custom-dark-blue border-e border-gray-300 px-2 py-1">
+                        <button class="text-gray-500 dark:text-white hover:text-custom-gray-blue border-e border-gray-300 px-2 py-1">
                             <i class="fa-solid fa-chevron-left px-2"></i>
                         </button>
                         <span class="text-gray-700 dark:text-white px-2 py-1">1 - 4</span>
-                        <button class="text-gray-500 dark:text-white hover:text-custom-dark-blue border-s border-gray-300 px-2 py-1">
+                        <button class="text-gray-500 dark:text-white hover:text-custom-gray-blue border-s border-gray-300 px-2 py-1">
                             <i class="fa-solid fa-chevron-right px-2"></i>
                         </button>
                     </div>

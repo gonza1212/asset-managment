@@ -12,10 +12,10 @@
     </x-slot>
     <div class="py-4">
         <div class="sm:px-6 lg:px-8">
-            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+            <div class="bg-gray-50 shadow-inner dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900 dark:text-gray-100">
                     <!-- DETALLES -->
-                    <p class="mb-5">Detalles</p>
+                    <p class="mb-5 text-xl">Detalles</p>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <!-- Nombre -->
                         <x-detail-card :attribute="'Nombre'" :data="$project['name']" />
@@ -41,8 +41,7 @@
                         <!-- Fecha de Finalización -->
                         <x-detail-card :attribute="'Fecha de Finalización'" :data="$project['finished_at']" />
                     </div>
-                    <x-gray-button class="mt-5 mb-3" id="openEditProjectModal">Editar</x-gray-button>
-
+                        <x-button-light-blue class="mt-5 mb-3" id="openEditProjectModal">Editar</x-button-light-blue>
                     <!-- ASIGNACIÓN -->
                     <p class="mb-5 mt-12">Asignación</p>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -58,8 +57,8 @@
                         <!-- Ubicación -->
                         <x-detail-card :attribute="'Ubicación'"  :data="$project['location']" />
                     </div>
-                    <x-gray-button class="mt-5 mb-3">Ir a Asignaciones</x-gray-button>
-                    <x-gray-button class="mt-5 mb-3 ms-5">Ver Historial</x-gray-button>
+                        <x-button-light-blue class="mt-5 mb-3">Ir a Asignaciones</x-button-light-blue>
+                        <x-button-dark-blue class="mt-5 mb-3 ms-5">Ver Historial</x-button-dark-blue>
 
                     <!-- AVANCE -->
                     <p class="mb-5 mt-12">Avance</p>
@@ -70,9 +69,9 @@
                         <!-- Fecha de último informe -->
                         <x-detail-card :attribute="'Fecha de último informe'"  :data="$project['last_report_at']" />
                     </div>
-                    <x-gray-button class="mt-5 mb-3">Ver informe de progreso</x-gray-button>
+                    <x-button-dark-blue class="mt-5 mb-3">Ver informe de progreso</x-button-dark-blue>
                 </div>
-                <x-gray-button class="mt-5 mb-20 ms-6 px-12">Finalizar Proyecto</x-gray-button>
+                <x-button-red class="mt-5 mb-20 ms-6 px-12">Finalizar Proyecto</x-button-red>
             </div>
         </div>
     </div>

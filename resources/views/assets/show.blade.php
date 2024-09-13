@@ -12,10 +12,10 @@
     </x-slot>
     <div class="py-4">
         <div class="sm:px-6 lg:px-8">
-            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+            <div class="bg-gray-50 shadow-inner dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900 dark:text-gray-100">
                     <!-- DETALLES -->
-                    <p class="mb-5">Detalles</p>
+                    <p class="mb-5 text-xl">Detalles</p>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         
                         <!-- Categoría -->
@@ -36,10 +36,11 @@
                         <!-- Estado -->
                         <x-detail-card :attribute="'Estado'"  :data="$asset['status']" />
                     </div>
-                    <x-gray-button class="mt-5 mb-3" id="openEditAssetModal">Editar</x-gray-button>
-
+                    <div class="mt-5 mb-3">
+                        <x-button-light-blue id="openEditAssetModal">Editar</x-button-light-blue>
+                    </div>
                     <!-- ASIGNACIÓN -->
-                    <p class="mb-5 mt-12">Asignación</p>
+                    <p class="mb-5 text-xl mt-12">Asignación</p>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <!-- Asignado a -->
                         <x-detail-card :attribute="'Asignado a'" :data="$asset['assigned_to']" />
@@ -59,11 +60,11 @@
                         <!-- Fecha de actualización -->
                         <x-detail-card :attribute="'Fecha de actualización'"  :data="$asset['assigment_updated_at']" />
                     </div>
-                    <x-gray-button class="mt-5 mb-3">Ir a Asignaciones</x-gray-button>
-                    <x-gray-button class="mt-5 mb-3 ms-5">Ver Historial</x-gray-button>
+                    <x-button-light-blue class="mt-5 mb-3">Ir a Asignaciones</x-button-light-blue>
+                    <x-button-dark-blue class="mt-5 mb-3 ms-5">Ver Historial</x-button-dark-blue>
 
                     <!-- AVANCE -->
-                    <p class="mb-5 mt-12">Mantenimiento</p>
+                    <p class="mb-5 text-xl mt-12">Mantenimiento</p>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <!-- Fecha de ingreso -->
                         <x-detail-card :attribute="'Fecha de ingreso'" :data="$asset['entered_at']" />
@@ -77,9 +78,9 @@
                         <!-- Descripción -->
                         <x-detail-card :attribute="'Descripción'"  :data="$asset['maintenance_description']" />
                     </div>
-                    <x-gray-button class="mt-5 mb-3">Ir a Mantenimiento</x-gray-button>
+                    <x-button-light-blue class="mt-5 mb-3">Ir a Mantenimiento</x-button-light-blue>
                 </div>
-                <x-gray-button class="mt-5 mb-20 ms-6 px-16">Dar de baja <i class="fa-solid fa-trash-can"></i></x-gray-button>
+                <x-button-red class="mt-5 mb-20 ms-6 px-16">Dar de baja <i class="fa-solid fa-trash-can"></i></x-button-red>
             </div>
         </div>
     </div>
