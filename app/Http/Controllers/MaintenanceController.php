@@ -14,6 +14,8 @@ class MaintenanceController extends Controller
     public function index() {
         return view('maintenance.index', [
             'maintenance' => MaintenanceFaker::all(),
+            'pending' => MaintenanceFaker::pending(),
+            'upcoming' => MaintenanceFaker::upcoming(),
         ]);
     }
 }

@@ -7,7 +7,7 @@ class AssetFaker
 {
     private static $assets = [
         [
-            'id' => '1',
+            'id' => 1,
             'code' => 'H001',
             'description' => 'Martillo Neumático',
             'category' => 'Herramientas',
@@ -27,7 +27,7 @@ class AssetFaker
             'maintenance_description' => 'Mantenimiento preventivo',
         ],
         [
-            'id' => '2',
+            'id' => 2,
             'code' => 'H002',
             'description' => 'Llave de Torque Hidráulica',
             'category' => 'Herramientas',
@@ -47,7 +47,7 @@ class AssetFaker
             'maintenance_description' => 'Mantenimiento preventivo',
         ],
         [
-            'id' => '3',
+            'id' => 3,
             'code' => 'H003',
             'description' => 'Detector de Gases Portátil',
             'category' => 'Herramientas',
@@ -67,7 +67,7 @@ class AssetFaker
             'maintenance_description' => 'Mantenimiento preventivo',
         ],
         [
-            'id' => '4',
+            'id' => 4,
             'code' => 'E001',
             'description' => 'Generador Eléctrico Diesel',
             'category' => 'Equipos',
@@ -87,7 +87,7 @@ class AssetFaker
             'maintenance_description' => 'Mantenimiento preventivo',
         ],
         [
-            'id' => '5',
+            'id' => 5,
             'code' => 'E002',
             'description' => 'Compresor de Aire',
             'category' => 'Equipos',
@@ -107,7 +107,7 @@ class AssetFaker
             'maintenance_description' => 'Mantenimiento preventivo',
         ],
         [
-            'id' => '6',
+            'id' => 6,
             'code' => 'E003',
             'description' => 'Unidad de Bombeo',
             'category' => 'Equipos',
@@ -127,7 +127,7 @@ class AssetFaker
             'maintenance_description' => 'Mantenimiento preventivo',
         ],
         [
-            'id' => '7',
+            'id' => 7,
             'code' => 'E004',
             'description' => 'Equipo de Soldadura',
             'category' => 'Equipos',
@@ -147,7 +147,7 @@ class AssetFaker
             'maintenance_description' => 'Mantenimiento preventivo',
         ],
         [
-            'id' => '8',
+            'id' => 8,
             'code' => 'C001',
             'description' => 'Lubricante Industrial',
             'category' => 'Consumibles',
@@ -167,7 +167,7 @@ class AssetFaker
             'maintenance_description' => 'Mantenimiento preventivo',
         ],
         [
-            'id' => '9',
+            'id' => 9,
             'code' => 'C002',
             'description' => 'Filtros para Compresores',
             'category' => 'Consumibles',
@@ -187,7 +187,7 @@ class AssetFaker
             'maintenance_description' => 'Mantenimiento preventivo',
         ],
         [
-            'id' => '10',
+            'id' => 10,
             'code' => 'C003',
             'description' => 'Electrodos de Soldadura',
             'category' => 'Consumibles',

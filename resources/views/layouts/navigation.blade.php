@@ -60,9 +60,14 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{ route('maintenance.index') }}" class="flex items-center px-4 m-2 bg-gray-100 rounded-xl py-3 hover:bg-custom-blue dark:hover:bg-gray-700">
-                        <i class="fa-solid fa-paint-roller mr-3"></i>
-                        <span x-show="!collapsed">Mantenimiento</span>
+                    <a href="{{ route('maintenance.index') }}" class="flex items-center justify-between px-4 m-2 bg-gray-100 rounded-xl py-3 hover:bg-custom-blue dark:hover:bg-gray-700">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-paint-roller mr-3"></i>
+                            <span x-show="!collapsed">Mantenimiento</span>
+                        </div>
+                        <span class="inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-gray-600 rounded-full">
+                            3
+                        </span>
                     </a>
                 </li>
                 <li>
