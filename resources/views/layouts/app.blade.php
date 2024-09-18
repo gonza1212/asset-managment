@@ -23,14 +23,14 @@
         <div class="flex flex-col w-screen">
             <!-- Page Heading -->
             @isset($header)
-                <header class="bg-custom-gray-blue dark:bg-custom-dark-blue">
+                <header class="z-10 fixed w-full shadow-md bg-custom-gray-blue dark:bg-custom-dark-blue">
                     <div class="mx-auto py-3 px-4 sm:px-6 lg:px-8 text-center flex justify-center flex-wrap flex-col content-stretch h-[60px]">
                         {{ $header }}
                     </div>
                 </header>
             @endisset
             <!-- Page Content -->
-            <main class="md:ml-64 sm:ml-0 xs:ml-0">
+            <main class="mt-16 lg:ml-64 sm:ml-0 xs:ml-0">
                 {{ $slot }}
             </main>
         </div>

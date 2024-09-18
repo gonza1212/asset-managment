@@ -1,28 +1,30 @@
 @props(['user'])
 
-<div
-    x-data="{ open: false, collapsed: false }"
-    :class="{'w-64': !collapsed, 'w-20': collapsed}"
-    class="sidebar fixed inset-y-0 left-0 xl:mt-20 xl:m-2 lg:mt-20 lg:m-2 sm:mt-20 sm:m-2 text-gray-800 dark:text-white transform transition-all duration-300 ease-in-out z-50"
-    id="sidebar"
->
-    <div class="flex flex-col h-full">
-        <button id="closeSidebar" class="absolute top-4 right-4 p-1 rounded-full hover:bg-gray-700 lg:hidden">cerrar</button>
 
-        <!-- Botón para cerrar (visible solo en móviles) -->
-        <button @click="open = false" class="absolute top-4 right-4 p-1 rounded-full hover:bg-gray-700 lg:hidden z-90">
-            cerrar
+<div x-data="{ open: false, collapsed: false }">
+
+
+    <!-- Sidebar -->
+    <div
+        :class="{ 'translate-x-0': open, '-translate-x-full': !open, 'w-64': !collapsed, 'w-20': collapsed }"
+        class="sidebar fixed inset-y-0 left-0 bg-white rounded-r-lg py-3 p-1 pt-6 mt-16 lg:bg-inherit dark:bg-gray-800 text-gray-800 dark:text-white dark:lg:bg-inherit transform -translate-x-full lg:translate-x-0 lg:w-64 z-40 transition-transform duration-700 ease-in-out"
+        id="sidebar"
+    >
+        <div class="flex flex-col h-full">
+        <!-- Botón de Cerrar (visible solo en móviles) -->
+        <button id="closeSidebar" @click="open = false" class="absolute top-0 right-4 p-1 lg:hidden z-50">
+        <i class="fa-solid fa-xmark"></i>
         </button>
 
         <!-- Sección superior -->
-        <div class="p-4 bg-gray-100 rounded-xl m-2 shadow-md flex items-center cursor-pointer dark:bg-gray-800" id="user_data" title="Ver y editar perfil de usuario">
+        <div class="p-4 bg-gray-100 rounded-xl m-2 shadow-md flex items-center cursor-pointer dark:lg:bg-gray-800 dark:bg-gray-700" id="user_data" title="Ver y editar perfil de usuario">
             <img src="/images/system/empty-profile.png" alt="Foto de perfil del usuario" class="w-12 h-12 rounded-full mr-4 border border-2 border-gray-400" />
             <div>
-                <h2 class="text-xl font-semibold">
-                    <span x-show="!collapsed">@if(isset($user)) {{ $user->name }} @else usuario @endif</span>
-                    <span x-show="collapsed">@if(isset($user)) {{ substr($user, 0, 1) }} @else ??? @endif</span>
-                </h2>
-                <p class="text-gray-500 text-sm">@if(isset($user)) {{ $user->email }} @else example@mail.com @endif</p>
+            <h2 class="text-xl font-semibold">
+                <span x-show="!collapsed">@if(isset($user)) {{ $user->name }} @else usuario @endif</span>
+                <span x-show="collapsed">@if(isset($user)) {{ substr($user, 0, 1) }} @else ??? @endif</span>
+            </h2>
+            <p class="text-gray-500 text-sm">@if(isset($user)) {{ $user->email }} @else example@mail.com @endif</p>
             </div>
         </div>
 
@@ -98,7 +100,9 @@
         </div>
     </div>
 
-    <button id="openSidebar" class="fixed top-4 left-4 z-50 p-2 bg-gray-800 text-white rounded-md lg:hidden">hamburguesa</button>
+    <button id="openSidebar" class="fixed top-3 left-4 z-50 p-2 text-white lg:hidden">
+        <i class="fa-solid fa-bars"></i>
+    </button>
 
 <script>
     const sidebar = document.getElementById('sidebar');
