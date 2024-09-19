@@ -1,5 +1,5 @@
 <x-guest-layout>
-    <div x-data="{ slides: ['images/web/image1.jpg', 'images/web/image2.jpg', 'images/web/image3.jpg', 'images/web/image4.jpg', 'images/web/image5.jpg'], activeSlide: 0 }" x-init="setInterval(() => activeSlide = (activeSlide + 1) % slides.length, 10000)" class="h-screen w-screen">
+    <div x-data="{ slides: ['images/web/image1.jpg', 'images/web/image2.jpg', 'images/web/image3.jpg', 'images/web/image4.jpg', 'images/web/image5.jpg'], activeSlide: 0 }" x-init="setInterval(() => activeSlide = (activeSlide + 1) % slides.length, 10000)" class="h-screen w-screen relative">
         <template x-for="(slide, index) in slides" :key="index">
             <div
             x-show="activeSlide === index"
@@ -23,6 +23,9 @@
                 <h1 class="text-4xl font-bold mb-4 dark:text-white">Asset Management</h1>
                 <p class="text-lg dark:text-slate-400">Muestra de concepto de sistema de Gestión de Activos</p>
             </div>
+        </div>
+        <div class="absolute bottom-20 inset-x-0 z-50 flex justify-center">
+            <a href="https://latinidesign.com/#inicio" target="_blank" class="text-sm text-white text-opacity-70 text-xl [text-shadow:_1px_1px_3px_rgb(0_0_0_/_50%)]">Powered by <span class="font-bold hover:text-cyan-300">LatiniDesign</span></a>
         </div>
     </div>
 </x-guest-layout>
