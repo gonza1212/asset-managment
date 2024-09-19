@@ -7,7 +7,7 @@
     <!-- Sidebar -->
     <div
         :class="{ 'translate-x-0': open, '-translate-x-full': !open, 'w-64': !collapsed, 'w-20': collapsed }"
-        class="sidebar fixed inset-y-0 left-0 bg-white rounded-r-lg py-3 p-1 pt-6 mt-16 lg:bg-inherit dark:bg-gray-800 text-gray-800 dark:text-white dark:lg:bg-inherit transform -translate-x-full lg:translate-x-0 lg:w-64 z-40 transition-transform duration-700 ease-in-out"
+        class="overflow-y-auto sidebar fixed inset-y-0 left-0 bg-white rounded-r-lg py-3 p-1 pt-6 mt-16 lg:bg-inherit dark:bg-gray-800 text-gray-800 dark:text-white dark:lg:bg-inherit transform -translate-x-full lg:translate-x-0 lg:w-64 z-40 transition-transform duration-700 ease-in-out"
         id="sidebar"
     >
         <div class="flex flex-col h-full">

@@ -15,7 +15,7 @@ export default {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
             screens: {
-                xs: {'max': '767px'},
+                xs: {'max': '640px'},
             },
             colors: {
                 'custom-dark-blue': '#316176',

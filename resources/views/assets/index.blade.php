@@ -5,11 +5,11 @@
         </h2>
     </x-slot>
     <!-- Barra superior: filtros y busqueda -->
-    <div class="flex items-center justify-between p-6">
+    <div class="flex flex-wrap flex-start xl:justify-between ps-6 pe-6 pt-6">
         <!-- Mostrar -->
-        <div class="flex items-center space-x-2 w-1/4">
+        <div class="mr-4 mb-4">
             <label for="mostrar" class="text-gray-700 dark:text-gray-400">Mostrar:</label>
-            <x-select class="w-1/2" :id="'mostrar'">
+            <x-select :id="'mostrar'">
                 <option value="Seleccionar categoría">Seleccionar categoría</option>
                 <option value="Equipos">Equipos</option>
                 <option value="Herramientas">Herramientas</option>
@@ -17,7 +17,7 @@
             </x-select>
         </div>
         <!-- Filtrar -->
-        <div class="flex items-center space-x-2 w-1/4">
+        <div class="mr-4 mb-4 xs:mr-0">
             <label for="filtrar" class="text-gray-700 dark:text-gray-400">Filtrar:</label>
             <x-select class="w-1/2" :id="'filtrar'">
                 <option value="Seleccionar estado">Seleccionar estado</option>
@@ -31,8 +31,8 @@
             </x-select>
         </div>
         <!-- Búsqueda -->
-        <div class="flex items-center space-x-2 w-1/2">
-            <div class="relative w-full ps-2">
+        <div class="md:w-1/2 xs:w-full xs:order-first lg:w-fill mb-4">
+            <div class="relative w-full">
                 <input type="text" placeholder="Buscar..." class="border border-gray-300 dark:border-gray-600 dark:text-gray-300 dark:bg-gray-700 rounded-xl p-2 pl-10 focus:outline-none focus:ring-2 focus:ring-blue-500 w-full">
                 <!-- Icono de lupa -->
                 <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
@@ -40,16 +40,16 @@
         </div>
     </div>
 
-    <div class="bg-gray-300 dark:bg-gray-600 p-4 mx-6 mt-6 mb-0 rounded-t-xl">
+    <div class="bg-gray-300 dark:bg-gray-600 xs:pt-2 xs:pb-0 xs:px-0 p-4 mx-6 mt-6 mb-0 rounded-t-xl">
     <!-- Barra de Herramientas -->
-        <div class="flex items-center justify-between mb-2">
-            <div class="flex space-x-4">
+        <div class="flex sm:justify-between xs:justify-end xs:flex-wrap">
+            <div class="flex xs:justify-center space-x-4 xs:w-full xs:scale-75 xs:mb-2">
                 <x-button-light-blue href="{{ route('assets.create') }}">Agregar</x-button-light-blue>
                 <x-button-red>Eliminar</x-button-red>
                 <x-button-red id="openEditAssetModal">Asignar</x-button-red>
             </div>
             <div class="flex items-center space-x-2">
-                <div class="bg-white dark:bg-gray-500 dark:hover:bg-gray-400 rounded-md flex items-center justify-between">
+                <div class="xs:scale-75 bg-white dark:bg-gray-500 dark:hover:bg-gray-400 rounded-md flex items-center justify-between">
                     <button class="text-gray-500 dark:text-white hover:text-custom-gray-blue border-e border-gray-300 px-2 py-1">
                         <i class="fa-solid fa-chevron-left px-2"></i>
                     </button>

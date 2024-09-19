@@ -44,7 +44,7 @@
 
     <div class="bg-gray-300 dark:bg-gray-600 xs:pt-2 xs:pb-2 p-4 mx-6 mt-6 mb-0 rounded-t-xl">
     <!-- Barra de Herramientas -->
-        <div class="flex items-center justify-between">
+        <div class="flex items-center justify-between xs:-mx-4">
             <div class="flex space-x-4 xs:scale-75">
                 <x-button-light-blue href="#">Agregar</x-button-light-blue>
                 <x-button-red>Finalizar</x-button-red>
