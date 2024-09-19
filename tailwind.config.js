@@ -16,6 +16,7 @@ export default {
             },
             screens: {
                 xs: {'max': '640px'},
+                xss: {'460': '640px'},
             },
             colors: {
                 'custom-dark-blue': '#316176',

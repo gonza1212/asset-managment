@@ -9,7 +9,7 @@
         <!-- Mostrar -->
         <div class="mr-4 mb-4">
             <label for="mostrar" class="text-gray-700 dark:text-gray-400">Mostrar:</label>
-            <x-select :id="'mostrar'">
+            <x-select class="pr-10" :id="'mostrar'">
                 <option value="Seleccionar categoría">Seleccionar categoría</option>
                 <option value="Equipos">Equipos</option>
                 <option value="Herramientas">Herramientas</option>
@@ -19,7 +19,7 @@
         <!-- Filtrar -->
         <div class="mr-4 mb-4 xs:mr-0">
             <label for="filtrar" class="text-gray-700 dark:text-gray-400">Filtrar:</label>
-            <x-select class="w-1/2" :id="'filtrar'">
+            <x-select class="pr-10" :id="'filtrar'">
                 <option value="Seleccionar estado">Seleccionar estado</option>
                 <option value="Disponible">Disponible</option>
                 <option value="En uso">En uso</option>
