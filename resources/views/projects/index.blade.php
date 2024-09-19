@@ -10,7 +10,7 @@
         <!-- Mostrar -->
         <div class="mr-4 mb-4">
             <label for="mostrar" class="text-gray-700 dark:text-gray-400">Mostrar:</label>
-            <x-select :id="'mostrar'">
+            <x-select class="pr-10" :id="'mostrar'">
                 <option value="Todos">Todos</option>
                 <option value="Actuales">Actuales</option>
                 <option value="Finalizados">Finalizados</option>
