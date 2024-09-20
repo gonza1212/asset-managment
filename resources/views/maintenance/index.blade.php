@@ -21,10 +21,10 @@
         <div class="flex items-center space-x-1 w-1/2 pe-24">
             <label for="mostrar" class="text-gray-700 dark:text-gray-400">Vista:</label>
             <!-- Botones de vista -->
-            <button id="calendarBtn" class="px-4 py-2 rounded-l-lg border border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-gray-600 hover:bg-gray-300 dark:hover:bg-gray-500 dark:text-gray-900" data-view="calendar">
+            <button id="calendarBtn" class="px-4 py-2 rounded-l-lg border border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-gray-600 hover:bg-gray-300 dark:hover:bg-gray-500 focus:bg-custom-dark-blue dark:focus:bg-custom-dark-blue dark:text-gray-900" data-view="calendar">
                 <i class="fa-regular fa-calendar"></i>
             </button>
-            <button id="listBtn" class="px-4 py-2 rounded-r-lg border border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-gray-600 hover:bg-gray-300 dark:hover:bg-gray-500 dark:text-gray-900" data-view="list">
+            <button id="listBtn" class="px-4 py-2 rounded-r-lg border border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-gray-600 hover:bg-gray-300 dark:hover:bg-gray-500 focus:bg-custom-dark-blue dark:focus:bg-custom-dark-blue dark:text-gray-900" data-view="list">
                 <i class="fa-solid fa-table"></i>
             </button>
         </div>
@@ -43,7 +43,7 @@
 
     <div class="hidden" id="list_container">
         <!-- Pendientes -->
-        <div class="bg-white border-2 border-b-0 dark:border-gray-600 dark:bg-gray-600 p-4 mx-6 mt-6 mb-0 rounded-t-xl">
+        <div class="bg-gray-300 border-2 border-b-0 border-gray-300 dark:border-gray-700 dark:bg-gray-700 dark:border-b-2 dark:border-gray-700 p-4 mx-6 mt-6 mb-0 rounded-t-xl">
             <div class="flex items-center justify-between">
                 <h3 class="dark:text-white text-lg font-bold">Pendientes</h3>
             </div>
@@ -53,12 +53,12 @@
         </div>
 
         <!-- Próximos -->
-        <div class="bg-gray-300 border-2 border-b-0 dark:border-gray-600 dark:bg-gray-600 p-4 mx-6 mt-6 mb-0 rounded-t-xl">
+        <div class="bg-gray-300 border-2 border-b-0 border-gray-300 dark:border-gray-700 dark:bg-gray-700 dark:border-b-2 dark:border-gray-700 p-4 mx-6 mt-6 mb-0 rounded-t-xl">
             <div class="flex items-center justify-between">
                 <div class="flex space-x-4">
                     <h3 class="dark:text-white text-lg font-bold">Próximos</h3>
                 </div>
-                <div class="flex items-center space-x-2">
+                <div class="flex items-center space-x-2 xs:scale-75">
                     <div class="bg-white dark:bg-gray-500 dark:hover:bg-gray-400 rounded-md flex items-center justify-between">
                         <button class="text-gray-500 dark:text-white hover:text-custom-gray-blue border-e border-gray-300 px-2 py-1">
                             <i class="fa-solid fa-chevron-left px-2"></i>
