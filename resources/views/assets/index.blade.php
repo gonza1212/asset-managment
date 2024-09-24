@@ -68,7 +68,7 @@
     <x-edit-modal :modal_id="'assign_assets_modal'" :entity="'Asset'">
     <div class="py-4">
         <div class="sm:px-6 lg:px-8">
-            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+            <div class="bg-white dark:bg-gray-800 overflow-hidden sm:rounded-lg">
                 <div class="p-6 text-gray-900 dark:text-gray-100">
                     <!-- DETALLES -->
                     <p class="mb-5">Asignar Activo/s</p>
@@ -91,9 +91,9 @@
                     </div>
                     
                 </div>
-                <div class="w-full text-center">
-                    <x-gray-button class="mt-5 mb-20 ms-6 px-12" id="closeEditAssetModal">Cancelar</x-gray-button>
-                    <x-gray-button class="mt-5 mb-20 ms-6 px-12">Continuar</x-gray-button>
+                <div class="flex justify-end px-4 py-3 xs:space-y-4 sm:px-6 xs:flex-col">
+                    <x-button-white id="closeEditAssetModal">Cancelar</x-button-white>
+                    <x-button-blue>Continuar</x-button-blue>
                 </div>
             </div>
         </div>

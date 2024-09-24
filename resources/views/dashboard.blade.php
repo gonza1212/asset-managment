@@ -8,6 +8,17 @@
         <div class="sm:px-6 lg:px-8">
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                 <div class="p-6 text-gray-900 dark:text-gray-100">
+                    <h2 class="text-4xl mb-5"><i class="fas fa-home mr-3"></i>Inicio</h2>
+                    <p>Panel de Inicio de demo de software de gestión de activos.</p>
+                    <p>Todos los datos son de muestra y ninguna acción es permanente.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="py-12">
+        <div class="sm:px-6 lg:px-8">
+            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
+                <div class="p-6 text-gray-900 dark:text-gray-100">
                     <h2 class="text-4xl mb-5">Demo. Gestión de Activos.</h2>
                     <p>Esta demo es la base conceptual de un sistema de gestión de activos. Se diseñó como una aplicación que, además de llevar el inventario de herramientas, máquinas e insumos y planificar tareas de mantenimiento,  permite la asignación de responsabilidades del personal, con el fin de controlar de manera más precisa el estado de cada herramienta.
                     <br>
@@ -40,17 +51,6 @@
                         <p>WA:<a class="text-blue-700" target="_blank" href="https://wa.me/5492804505920">+5492804505920<a/></p>
                         <a class="text-blue-700" target="_blank" href="https://latinidesign.com">https://latinidesign.com<a/>
                     </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="py-12">
-        <div class="sm:px-6 lg:px-8">
-            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
-                <div class="p-6 text-gray-900 dark:text-gray-100">
-                    <h2 class="text-4xl mb-5"><i class="fas fa-home mr-3"></i>Inicio</h2>
-                    <p>Panel de Inicio de demo de software de gestión de activos.</p>
-                    <p>Todos los datos son de muestra y ninguna acción es permanente.</p>
                 </div>
             </div>
         </div>
