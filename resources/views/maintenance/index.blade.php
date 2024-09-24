@@ -37,7 +37,7 @@
         </div>
     </div>
 
-    <div class="mx-6 mb-6 rounded-xl p-3 border-2 border-gray-300 dark:bg-gray-800 dark:text-white dark:rounded-xl dark:p-4" id="calendar_container">
+    <div class="mx-6 mb-6 rounded-xl p-3 border-2 border-gray-300 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:rounded-xl dark:p-4" id="calendar_container">
         <div id='calendar' style="max-height:480px;"></div>
     </div>
 

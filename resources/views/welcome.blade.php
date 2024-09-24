@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="absolute bottom-20 inset-x-0 z-50 flex justify-center">
-            <a href="https://latinidesign.com/#inicio" target="_blank" class="text-sm text-white text-opacity-70 text-xl [text-shadow:_1px_1px_3px_rgb(0_0_0_/_50%)]">Powered by <span class="font-bold hover:text-cyan-300">LatiniDesign</span></a>
+            <a href="https://latinidesign.com/" target="_blank" class="text-sm text-white text-opacity-70 text-xl [text-shadow:_1px_1px_3px_rgb(0_0_0_/_50%)]">Powered by <span class="font-bold hover:text-cyan-300">LatiniDesign</span></a>
         </div>
     </div>
 </x-guest-layout>

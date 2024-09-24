@@ -40,16 +40,16 @@
         </div>
     </div>
 
-    <div class="bg-gray-300 dark:bg-gray-600 xs:pt-2 xs:pb-0 xs:px-0 p-4 mx-6 mt-6 mb-0 rounded-t-xl">
+    <div class="bg-gray-300 dark:bg-gray-600 xs:pt-2 xs:pb-0 xs:px-0 p-4 xs:pl-0 mx-6 mt-6 mb-0 rounded-t-xl">
     <!-- Barra de Herramientas -->
-        <div class="flex sm:justify-between">
-            <div class="flex xs:justify-center space-x-4 xs:scale-75 xs:mb-2">
+        <div class="flex justify-between xxs:flex-wrap">
+            <div class="flex space-x-4 xs:scale-75 xs:mb-2 xxs:order-3">
                 <x-button-light-blue href="{{ route('assets.create') }}">Agregar</x-button-light-blue>
+                <x-button-new id="openEditAssetModal">Asignar</x-button-red>
                 <x-button-red>Eliminar</x-button-red>
-                <x-button-red id="openEditAssetModal">Asignar</x-button-red>
             </div>
-            <div class="flex items-center space-x-2 xs:scale-75">
-                <div class="bg-white dark:bg-gray-500 dark:hover:bg-gray-400 rounded-md flex items-center justify-between">
+            <div class="flex xxs:w-full space-x-2 xs:scale-75 xxs:order-1 xxs:mb-2">
+                <div class="bg-white ml-auto dark:bg-gray-500 dark:hover:bg-gray-400 rounded-md flex items-center justify-between">
                     <button class="text-gray-500 dark:text-white hover:text-custom-gray-blue border-e border-gray-300 px-2 py-1">
                         <i class="fa-solid fa-chevron-left px-2"></i>
                     </button>
